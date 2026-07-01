@@ -1,0 +1,77 @@
+/* variables.css */
+:root {
+  /* Typography */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Accent Colors (Luxury Gold & High Contrast Accents) */
+  --color-gold: hsl(43, 62%, 55%);
+  --color-gold-hover: hsl(43, 62%, 45%);
+  --color-gold-light: hsl(43, 62%, 95%);
+  --color-gold-glow: hsla(43, 62%, 55%, 0.15);
+
+  /* Shared Light Mode Values */
+  --light-bg: hsl(0, 0%, 98%);
+  --light-surface: hsl(0, 0%, 100%);
+  --light-surface-card: hsl(0, 0%, 96%);
+  --light-border: hsl(0, 0%, 90%);
+  --light-text: hsl(220, 20%, 12%);
+  --light-text-muted: hsl(220, 10%, 45%);
+  
+  /* Shared Dark Mode Values */
+  --dark-bg: hsl(220, 18%, 7%);
+  --dark-surface: hsl(220, 18%, 10%);
+  --dark-surface-card: hsl(220, 18%, 13%);
+  --dark-border: hsl(220, 12%, 18%);
+  --dark-text: hsl(220, 15%, 94%);
+  --dark-text-muted: hsl(220, 10%, 65%);
+
+  /* Default Theme Settings (Defaulting to Dark Mode for luxury aesthetic) */
+  --bg: var(--dark-bg);
+  --surface: var(--dark-surface);
+  --surface-card: var(--dark-surface-card);
+  --border: var(--dark-border);
+  --text: var(--dark-text);
+  --text-muted: var(--dark-text-muted);
+  
+  /* Success, Error status colors */
+  --color-success: hsl(142, 72%, 40%);
+  --color-error: hsl(350, 72%, 50%);
+
+  /* Glassmorphism & Shadow Tokens */
+  --glass-bg: rgba(20, 22, 28, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-blur: blur(12px);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.4);
+  
+  /* Border Radius & Layout Spacing */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-round: 50%;
+  
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  
+  --container-max-width: 1280px;
+  --header-height: 80px;
+}
+
+/* Light Theme Overrides */
+[data-theme="light"] {
+  --bg: var(--light-bg);
+  --surface: var(--light-surface);
+  --surface-card: var(--light-surface-card);
+  --border: var(--light-border);
+  --text: var(--light-text);
+  --text-muted: var(--light-text-muted);
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
