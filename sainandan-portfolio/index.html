@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sainandan Palthi | Full Stack Engineer & UI/UX Developer</title>
+  <meta name="description" content="Professional portfolio of Sainandan Palthi, showcasing high-performance web applications, clean code, and interactive user interfaces using CSS Grid, Flexbox, and advanced animations.">
+  
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dynamic Gradient Background mesh -->
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="mesh-orb orb-1"></div>
+    <div class="mesh-orb orb-2"></div>
+    <div class="mesh-orb orb-3"></div>
+  </div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header id="main-header" class="header">
+    <div class="header-container">
+      <a href="#" class="logo" aria-label="Sainandan Palthi Home">
+        <span class="logo-accent">&lt;</span>SP<span class="logo-accent">/&gt;</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav id="nav-menu" class="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Utilities (Theme toggle & Mobile Toggle) -->
+      <div class="nav-utilities">
+        <!-- Theme Toggle Switch -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <!-- Moon Icon (Dark Mode active, click for Light) -->
+          <svg class="icon moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+          <!-- Sun Icon (Light Mode active, click for Dark) -->
+          <svg class="icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    
+    <!-- HERO SECTION -->
+    <section id="home" class="hero section">
+      <div class="hero-container container">
+        <div class="hero-content">
+          <div class="hero-badge reveal" data-delay="100">
+            <span class="badge-dot"></span>
+            Available for new opportunities
+          </div>
+          <h1 class="hero-title reveal" data-delay="200">
+            Hi, I'm <span class="text-gradient">Sainandan Palthi</span>
+          </h1>
+          <h2 class="hero-subtitle reveal" data-delay="300">
+            Building the Future of Web Apps & Cloud Solutions
+          </h2>
+          <p class="hero-description reveal" data-delay="400">
+            I am a full stack engineer dedicated to crafting seamless digital products that integrate robust backend systems with elegant, responsive, and highly interactive user interfaces.
+          </p>
+          <div class="hero-cta reveal" data-delay="500">
+            <a href="#projects" class="btn btn-primary">
+              Explore Projects
+              <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="300">
+          <div class="hero-card-container">
+            <div class="hero-card glass">
+              <div class="card-header">
+                <div class="window-dot red"></div>
+                <div class="window-dot yellow"></div>
+                <div class="window-dot green"></div>
+                <span class="window-title">portfolio.json</span>
+              </div>
+              <div class="card-body">
+                <pre><code><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">"Sainandan Palthi"</span>,
+  role: <span class="code-string">"Full Stack Engineer"</span>,
+  skills: [
+    <span class="code-string">"TypeScript"</span>, <span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>,
+    <span class="code-string">"CSS Grid & Flexbox"</span>, <span class="code-string">"Cloud"</span>
+  ],
+  passion: <span class="code-string">"High-performance & UX"</span>,
+  coffeeToCodeRatio: <span class="code-number">1.27</span>
+};
+
+<span class="code-comment">// Ready to deploy next-gen applications</span>
+developer.deploy();</code></pre>
+              </div>
+            </div>
+            
+            <!-- Small floating visual components to show advanced CSS Grid layout capabilities -->
+            <div class="floating-badge badge-top glass">
+              <div class="badge-icon">⚡</div>
+              <div>
+                <p class="badge-title">Performance</p>
+                <p class="badge-value">99% Lighthouse</p>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom glass">
+              <div class="badge-icon">🎨</div>
+              <div>
+                <p class="badge-title">Layout</p>
+                <p class="badge-value">CSS Grid Mastery</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-mouse">
+          <span class="scroll-wheel"></span>
+        </span>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tagline">About Me</span>
+          <h2 class="section-title">My Journey & Expertise</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text block -->
+          <div class="about-info reveal" data-delay="100">
+            <h3>Bridging Design & Engineering</h3>
+            <p>
+              I design and build interactive web experiences that combine clean code architectures with modern UI paradigms. My engineering philosophy revolves around accessibility, visual delight, and performance.
+            </p>
+            <p>
+              With extensive experience in building systems that work seamlessly across viewports, I leverage modern CSS architectures like CSS Grid for layouts and Flexbox for fine component structuring. I thrive at the intersection of logical backend APIs and immersive frontend systems.
+            </p>
+            <div class="about-details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Location</span>
+                <span class="detail-val">Hyderabad, India</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Degree</span>
+                <span class="detail-val">B.Tech in Computer Science</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Email</span>
+                <span class="detail-val">sainandan.palthi@example.com</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Work Mode</span>
+                <span class="detail-val">Remote / Hybrid</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Creative Stats block -->
+          <div class="about-stats-panel reveal" data-delay="200">
+            <div class="stats-grid">
+              <div class="stat-card glass">
+                <span class="stat-number text-gradient">3+</span>
+                <span class="stat-desc">Years of Crafting Code</span>
+              </div>
+              <div class="stat-card glass">
+                <span class="stat-number text-gradient">20+</span>
+                <span class="stat-desc">Completed Projects</span>
+              </div>
+              <div class="stat-card glass">
+                <span class="stat-number text-gradient">15+</span>
+                <span class="stat-desc">Happy Clients & Teams</span>
+              </div>
+              <div class="stat-card glass">
+                <span class="stat-number text-gradient">100%</span>
+                <span class="stat-desc">Responsive Execution</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tagline">My Toolbox</span>
+          <h2 class="section-title">Core Skills & Technologies</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Frontend Category -->
+          <div class="skills-category glass reveal" data-delay="100">
+            <div class="category-header">
+              <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/>
+                <line x1="12" y1="22" x2="12" y2="15.5"/>
+                <polyline points="22 8.5 12 15.5 2 8.5"/>
+                <polyline points="2 15.5 12 8.5 22 15.5"/>
+                <line x1="12" y1="2" x2="12" y2="8.5"/>
+              </svg>
+              <h3>Frontend Architecture</h3>
+            </div>
+            <p class="category-desc">Designing fluid user-interfaces with responsive mechanics, modular structure, and optimal asset pipelines.</p>
+            <div class="skills-chips">
+              <div class="skill-chip">HTML5 / Semantic UI</div>
+              <div class="skill-chip">CSS3 (Grid & Flexbox)</div>
+              <div class="skill-chip">JavaScript (ES6+)</div>
+              <div class="skill-chip">TypeScript</div>
+              <div class="skill-chip">React.js</div>
+              <div class="skill-chip">Next.js</div>
+              <div class="skill-chip">Responsive Design</div>
+              <div class="skill-chip">Sass / CSS Variables</div>
+            </div>
+          </div>
+
+          <!-- Backend Category -->
+          <div class="skills-category glass reveal" data-delay="200">
+            <div class="category-header">
+              <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/>
+              </svg>
+              <h3>Backend & Datastores</h3>
+            </div>
+            <p class="category-desc">Building resilient server logic, scalable microservices, structured database queries, and secure web REST/GraphQL APIs.</p>
+            <div class="skills-chips">
+              <div class="skill-chip">Node.js</div>
+              <div class="skill-chip">Express</div>
+              <div class="skill-chip">Python / FastAPI</div>
+              <div class="skill-chip">PostgreSQL</div>
+              <div class="skill-chip">MongoDB</div>
+              <div class="skill-chip">REST & GraphQL APIs</div>
+              <div class="skill-chip">Redis Caching</div>
+            </div>
+          </div>
+
+          <!-- DevOps/Tools Category -->
+          <div class="skills-category glass reveal" data-delay="300">
+            <div class="category-header">
+              <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+              <h3>DevOps & Tools</h3>
+            </div>
+            <p class="category-desc">Automating deployments, setting up continuous pipelines, version tracking, and testing setups.</p>
+            <div class="skills-chips">
+              <div class="skill-chip">Git / GitHub</div>
+              <div class="skill-chip">Docker</div>
+              <div class="skill-chip">AWS (S3, EC2, Lambda)</div>
+              <div class="skill-chip">Vercel & Netlify</div>
+              <div class="skill-chip">Webpack & Vite</div>
+              <div class="skill-chip">CI/CD Pipelines</div>
+              <div class="skill-chip">Figma (UI/UX design)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tagline">My Creations</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <!-- Project Filter Controls -->
+        <div class="projects-filter-container reveal">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            <button class="filter-btn" data-filter="cloud">Cloud/DevOps</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid reveal" data-delay="100">
+          
+          <!-- Project 1 -->
+          <article class="project-card glass" data-category="fullstack">
+            <div class="project-image-wrapper">
+              <div class="project-img-fallback img-project-1"></div>
+              <div class="project-tags">
+                <span class="proj-tag">React</span>
+                <span class="proj-tag">Node.js</span>
+                <span class="proj-tag">MongoDB</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Aether Workplace Dashboard</h3>
+              <p class="project-description">
+                A collaborative workspace tool incorporating interactive dashboards, real-time charts, and customizable CSS Grid widgets.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Source Code for Aether Dashboard">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                  </svg>
+                  <span>Code</span>
+                </a>
+                <a href="#" class="project-link" aria-label="View Live Demo of Aether Dashboard">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                  <span>Live</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass" data-category="frontend">
+            <div class="project-image-wrapper">
+              <div class="project-img-fallback img-project-2"></div>
+              <div class="project-tags">
+                <span class="proj-tag">HTML5</span>
+                <span class="proj-tag">CSS Grid</span>
+                <span class="proj-tag">JS ES6</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Helios Smart Home Control</h3>
+              <p class="project-description">
+                A fully custom, high-fidelity landing dashboard control center layout using advanced CSS Grid coordinates and smooth CSS transition states.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Source Code for Helios Home Control">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                  </svg>
+                  <span>Code</span>
+                </a>
+                <a href="#" class="project-link" aria-label="View Live Demo of Helios Home Control">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                  <span>Live</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card glass" data-category="cloud">
+            <div class="project-image-wrapper">
+              <div class="project-img-fallback img-project-3"></div>
+              <div class="project-tags">
+                <span class="proj-tag">AWS</span>
+                <span class="proj-tag">Terraform</span>
+                <span class="proj-tag">Docker</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Neuron API Deployment Architecture</h3>
+              <p class="project-description">
+                Infrastructure configuration templates defining auto-scaling containers, custom CDN cache routing, and SSL termination pipelines.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Source Code for Neuron Infrastructure">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                  </svg>
+                  <span>Code</span>
+                </a>
+                <a href="#" class="project-link" aria-label="View Live Deployment Specifications">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                  <span>Live</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card glass" data-category="fullstack">
+            <div class="project-image-wrapper">
+              <div class="project-img-fallback img-project-4"></div>
+              <div class="project-tags">
+                <span class="proj-tag">GraphQL</span>
+                <span class="proj-tag">FastAPI</span>
+                <span class="proj-tag">React</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Chronos Time Analytics Platform</h3>
+              <p class="project-description">
+                A modern productivity tracker providing deep charts detailing developer performance metrics, integration pipelines, and custom reports.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Source Code for Chronos Time Analytics">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                  </svg>
+                  <span>Code</span>
+                </a>
+                <a href="#" class="project-link" aria-label="View Live Demo of Chronos Analytics">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                  <span>Live</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card glass" data-category="frontend">
+            <div class="project-image-wrapper">
+              <div class="project-img-fallback img-project-5"></div>
+              <div class="project-tags">
+                <span class="proj-tag">TypeScript</span>
+                <span class="proj-tag">Vite</span>
+                <span class="proj-tag">Sass</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Aura Crypto Analytics Portal</h3>
+              <p class="project-description">
+                A cryptocurrency market visualization site featuring custom interactive tables, light/dark transition sets, and flexbox aligned layout tokens.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Source Code for Aura Analytics">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                  </svg>
+                  <span>Code</span>
+                </a>
+                <a href="#" class="project-link" aria-label="View Live Demo of Aura Portal">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                  <span>Live</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card glass" data-category="cloud">
+            <div class="project-image-wrapper">
+              <div class="project-img-fallback img-project-6"></div>
+              <div class="project-tags">
+                <span class="proj-tag">GitHub Actions</span>
+                <span class="proj-tag">Bash</span>
+                <span class="proj-tag">K8s</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Octopus CI Pipeline Engine</h3>
+              <p class="project-description">
+                A custom shell orchestration pipeline that auto-packages modular packages, runs multi-threading unit tests, and compiles release bundles.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Source Code for Octopus Pipeline">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                  </svg>
+                  <span>Code</span>
+                </a>
+                <a href="#" class="project-link" aria-label="View Pipeline Specifications">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                  <span>Live</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE/EXPERIENCE SECTION -->
+    <section id="experience" class="experience section">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tagline">My Background</span>
+          <h2 class="section-title">Work Experience</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Card 1 -->
+          <div class="timeline-item reveal" data-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-date">2024 - Present</span>
+              <h3 class="timeline-role">Senior Full Stack Engineer</h3>
+              <h4 class="timeline-company text-gradient">PixelCraft Technologies</h4>
+              <p class="timeline-desc">
+                Lead a remote developer team creating complex dashboard applications. Spearheaded the rewrite of core dashboard systems using CSS Grid configurations, leading to a 40% code size reduction and absolute design consistency across views. Managed production AWS services.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Card 2 -->
+          <div class="timeline-item reveal" data-delay="200">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-date">2022 - 2024</span>
+              <h3 class="timeline-role">Web Developer</h3>
+              <h4 class="timeline-company text-gradient">NovaSoft Solutions</h4>
+              <p class="timeline-desc">
+                Built responsive components and custom layouts using mobile-first CSS Flexbox/Grid architectures. Optimized application bundle sizes, designed robust database schemas in MongoDB, and set up Dockerized dev environments to align workflows.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Card 3 -->
+          <div class="timeline-item reveal" data-delay="300">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-date">2021 - 2022</span>
+              <h3 class="timeline-role">Software Engineering Intern</h3>
+              <h4 class="timeline-company text-gradient">Apex Core Systems</h4>
+              <p class="timeline-desc">
+                Assisted in the engineering of REST API services using Node.js and Express. Implemented accessible layouts conforming to WCAG principles, configured unit tests in Jest, and worked closely with design and backend teams to implement features.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tagline">Get In Touch</span>
+          <h2 class="section-title">Let's Collaborate</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Column -->
+          <div class="contact-info reveal" data-delay="100">
+            <h3>Let's start a project together</h3>
+            <p>
+              I am interested in freelance options, contract collaborations, or full-time roles. If you have any inquiries or just want to chat, feel free to fill in the form or contact me directly through email or social media.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="method-icon glass">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="method-label">Email Me</p>
+                  <a href="mailto:sainandan.palthi@example.com" class="method-link">sainandan.palthi@example.com</a>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon glass">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="method-label">Current Location</p>
+                  <span class="method-link">Hyderabad, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links-container">
+              <p class="social-title">Follow My Updates</p>
+              <div class="social-links-grid">
+                <a href="#" class="social-link-btn glass" aria-label="GitHub Profile">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link-btn glass" aria-label="LinkedIn Profile">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect x="2" y="9" width="4" height="12"/>
+                    <circle cx="4" cy="4" r="2"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link-btn glass" aria-label="Twitter Profile">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="contact-form-container glass reveal" data-delay="200">
+            <form id="contact-form" class="contact-form" autocomplete="on">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="name" name="name" class="form-control" placeholder=" " required autocomplete="name">
+                  <label for="name" class="form-label">Your Name</label>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" name="email" class="form-control" placeholder=" " required autocomplete="email">
+                  <label for="email" class="form-label">Your Email</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" id="subject" name="subject" class="form-control" placeholder=" " required autocomplete="off">
+                <label for="subject" class="form-label">Subject</label>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" class="form-control" placeholder=" " rows="5" required autocomplete="off"></textarea>
+                <label for="message" class="form-label">Your Message</label>
+              </div>
+              <button type="submit" id="form-submit" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+              <div id="form-status" class="form-status-message" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container container">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-accent">&lt;</span>SP<span class="logo-accent">/&gt;</span>
+        </a>
+        <p>Building scalable systems & interactive web experiences.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-socials">
+        <h4 class="footer-title">Social Connect</h4>
+        <div class="social-links-grid">
+          <a href="#" class="footer-social-link" aria-label="GitHub">GitHub</a>
+          <a href="#" class="footer-social-link" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" class="footer-social-link" aria-label="Twitter">Twitter</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-bottom-container container">
+        <p>&copy; 2026 Sainandan Palthi. All rights reserved.</p>
+        <button id="back-to-top" class="back-to-top" aria-label="Scroll to top" title="Scroll to top">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
